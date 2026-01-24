@@ -1,1 +1,2 @@
-root@8dc92b1dcc78:/alu-shell/basics/0-current_working_directory
+#!/bin/bash
+/alu-shell/basics/0-current_working_directory
