@@ -1,6 +1,2 @@
 #!/bin/bash
-
-# -l: Long listing format (shows permissions, owner, size, etc.)
-# -a: Do not ignore entries starting with . (includes hidden files)
-
 ls -la . .. /boot
