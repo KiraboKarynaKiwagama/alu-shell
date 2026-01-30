@@ -1,3 +1,2 @@
 #!/bin/bash
-tr -d '\n\r' | fold -w1 | head -c -0
-echo
+tr -d '\n\r' | fold -w1 | head -c -0 | echo
