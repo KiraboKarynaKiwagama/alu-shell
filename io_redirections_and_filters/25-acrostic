@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -d '\n\r' | fold -w1 | head -c -0 | echo
+cut -c 1 | tr -d '\n'| sort 
