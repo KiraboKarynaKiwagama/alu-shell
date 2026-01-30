@@ -1,0 +1,2 @@
+#!/bin/bash
+for a in {a..z};{ for b in {a..z};{ [ $a$b = oo ]||echo $a$b;};}
