@@ -1,21 +1,20 @@
 #!/usr/bin/env bash
 # Group Apache log entries by IP and HTTP status code
 
-if [ ! -f "apache-access.log" ]; then
-    echo "Error: apache-access.log file not found" >&2
-    exit 1
-fi
-
-awk '
-{
-    # Check if line has at least 9 fields (IP and HTTP code)
-    if (NF >= 9) {
-        key = $1 " " $9
-        count[key]++
-    }
-}
+awk '{
+    # Extract IP (field 1) and HTTP status code (field 9)
+    ip = $1
+    status = $9
+    
+    # Create a key combining IP and status
+    key = ip " " status
+    
+    # Count occurrences
+    count[key]++
+} 
 END {
+    # Print all counts with IP and status
     for (key in count) {
         print count[key], key
     }
-}' apache-access.log | sort -k1,1nr -k2,2
+}' apache-access.log | sort -rn
