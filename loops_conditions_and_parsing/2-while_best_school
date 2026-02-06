@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
-# 1. Initialize the variable
-i=1
+#display a script that writes "Best School" 10 times
 
-# 2. Set the condition (While i is less than or equal to 10)
-while [ $i -le 10 ]
+count=1
+
+while [$count -ls 10]
 do
-    echo "Best School"
-    
-    # 3. Increment the variable (Add 1 to i)
-    ((i++))
+echo "Best School"
+((count++ ))
 done
