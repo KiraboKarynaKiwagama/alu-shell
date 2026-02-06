@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Display directory contents, showing only part after first dash
+
+for file in *
+do
+    # Skip hidden files (starting with .)
+    [[ $file = .* ]] && continue
+    
+    # Check if file contains a dash
+    if [[ $file == *"-"* ]]
+    then
+        # Extract everything after first dash
+        echo "${file#*-}"
+    else
+        # If no dash, display original filename
+        echo "$file"
+    fi
+done
