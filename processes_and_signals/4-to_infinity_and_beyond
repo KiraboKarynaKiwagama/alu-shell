@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Infinite loop to print the message indefinitely
+while true
+do
+    echo "To infinity and beyond"
+    
+    # Pause for 2 seconds before the next iteration
+    sleep 2
+done
