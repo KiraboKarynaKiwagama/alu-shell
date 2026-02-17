@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
-# Clear the screen for a clean view
-clear
-
-#Execute ps with flags:
-#a = all users
-#u = user-oriented format
-#x = include processes not attached to a terminal
-#f = display hierarchy (forest)
+#display all processes
 ps auxf
 
-echo "Total Processes: $(ps ax | wc -l)"
+
