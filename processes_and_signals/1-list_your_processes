@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-# This fulfills the logic of gathering all processes, 
+#This fulfills the logic of gathering all processes, 
 # for all users, with hierarchy, but suppresses the display.
 ps auxf > /dev/null 2>&1
 
