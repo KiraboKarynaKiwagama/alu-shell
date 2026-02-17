@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#this script prints the current pid
 
 echo "My PID is: $$"
 
